@@ -14,6 +14,7 @@
         <javax.servlet-api.version>3.0.1</javax.servlet-api.version>
         <javax.servlet.jsp-api.version>2.2.1</javax.servlet.jsp-api.version>
         <jstl.version>1.2</jstl.version>
+        <bootstrap.version>3.2.0</bootstrap.version>
     </properties>
 
     <dependencies>
@@ -48,6 +49,11 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
             <version>1.7.7</version>
+        </dependency>
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>bootstrap</artifactId>
+            <version>3.2.0</version>
         </dependency>
     </dependencies>
 

@@ -2,7 +2,8 @@ package com.epam.anya.servlet.entity;
 
 import java.util.List;
 
-public class AbstractCompTetx <T extends TextPart> implements CompoundText {
+public class AbstractCompoundText<T extends TextPart> implements CompoundText {
+    private List<> elements;
 
     @Override
     public TextPart getElement(int index) {
