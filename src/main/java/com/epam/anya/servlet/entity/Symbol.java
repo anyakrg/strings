@@ -1,4 +1,4 @@
-package entity;
+package com.epam.anya.servlet.entity;
 
 public class Symbol {
     String content;
