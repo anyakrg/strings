@@ -10,7 +10,7 @@ public class ActionFactory {
         actions.put("parse", new ParseAction());
         actions.put("parse", new ParseAction());
         actions.put("parse", new ParseAction());
-        actions.put("parse", new ParseAction());
+        actions.put("parse", new ParseAction());  
         actions.put("parse", new ParseAction());
         actions.put("parse", new ParseAction());
     }

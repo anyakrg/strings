@@ -1,9 +1,9 @@
 package com.epam.anya.servlet.action;
 
 import com.epam.anya.servlet.entity.Text;
-
+import com.epam.anya.servlet.util.Parser;
 import javax.servlet.http.HttpServletRequest;
-import javax.swing.text.html.parser.Parser;
+
 
 public class ParseAction implements Action {
 
