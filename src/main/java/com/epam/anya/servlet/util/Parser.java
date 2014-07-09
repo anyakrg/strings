@@ -14,4 +14,8 @@ public class Parser {
         textStr = textStr.replaceAll("<|>|\\t|\\s+", " ");
         return textStr;
     }
+
+    public static Text parseString(String text) {
+        return null;
+    }
 }

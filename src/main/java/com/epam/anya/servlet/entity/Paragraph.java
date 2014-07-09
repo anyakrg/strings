@@ -1,4 +1,7 @@
 package com.epam.anya.servlet.entity;
 
-public class Paragraph {
+import java.util.Collection;
+
+public class Paragraph extends AbstractCompoundText<Sentence> implements TextPart{
+    public Collection<? extends Sentence> parts;
 }

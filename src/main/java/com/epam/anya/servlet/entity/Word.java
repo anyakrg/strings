@@ -5,3 +5,4 @@ public class Word extends Symbol {
         super(content);
     }
 }
+  

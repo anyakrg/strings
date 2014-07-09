@@ -1,12 +1,21 @@
 package com.epam.anya.servlet.entity;
 
-public class Sentence extends Symbol {
+import java.util.Collection;
+
+public class Sentence extends Symbol implements TextPart {
+    public Type type;
+    public Collection<? extends SentencePart> parts;
+
     public Sentence(String content) {
         super(content);
     }
 
-    @Override
-    public String toString() {
-        return super.toString().toLowerCase();
+    public enum Type {
+        DECLARATIVE, INTERROGATIVE, EXCLAMATORY_IMPERATIVE;
+
+        @Override
+        public String toString() {
+            return super.toString().toLowerCase();
+        }
     }
 }
