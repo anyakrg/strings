@@ -1,4 +1,4 @@
 package com.epam.anya.servlet.entity;
 
-public interface TextPart {
+public class PunctuationMark {
 }

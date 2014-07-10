@@ -1,14 +1,23 @@
 package com.epam.anya.servlet.entity;
 
 public class Symbol {
-    String content;
+    private final char symbol;
 
-    public Symbol(String content) {
-        this.content = content;
+    public Symbol(char character) {
+        this.symbol = character;
+    }
+
+    public Symbol() {
+
+        symbol = 0;
+    }
+
+    public char getCharacter() {
+        return symbol;
     }
 
     @Override
     public String toString() {
-        return content;
+        return symbol + "";
     }
 }

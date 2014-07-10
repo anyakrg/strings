@@ -4,7 +4,7 @@ import com.epam.anya.servlet.entity.Paragraph;
 import com.epam.anya.servlet.entity.Sentence;
 import com.epam.anya.servlet.entity.SentencePart;
 import com.epam.anya.servlet.entity.Text;
-import com.epam.anya.servlet.util.Parser;
+import com.epam.anya.servlet.parser.Parser;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;

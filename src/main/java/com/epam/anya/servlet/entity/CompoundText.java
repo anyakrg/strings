@@ -1,8 +1,6 @@
 package com.epam.anya.servlet.entity;
 
-import java.util.List;
-
-public interface CompoundText<T extends TextPart>{
+public interface CompoundText<T>{
     T getElement(int index);
 }
 
