@@ -15,6 +15,7 @@
         <javax.servlet.jsp-api.version>2.2.1</javax.servlet.jsp-api.version>
         <jstl.version>1.2</jstl.version>
         <bootstrap.version>3.2.0</bootstrap.version>
+        <reflections>0.9.9-RC2</reflections>
     </properties>
 
     <dependencies>
@@ -54,6 +55,11 @@
             <groupId>org.webjars</groupId>
             <artifactId>bootstrap</artifactId>
             <version>3.2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.reflections</groupId>
+            <artifactId>reflections</artifactId>
+            <version>0.9.9-RC2</version>
         </dependency>
     </dependencies>
 
