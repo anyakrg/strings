@@ -11,10 +11,10 @@ public class ParseAction implements Action {
     public String execute(HttpServletRequest request) {
         String sourse = request.getParameter("textarea");
 
-           Text text = Parser.parseText(sourse);
+          // Text text = Parser.parseText(sourse);
            //  Text text = Text.fromString(sourse);
 
-        request.setAttribute("text", text);
+        //request.setAttribute("text", text);
         return "WEB-INF/index.jsp";
     }
 }
