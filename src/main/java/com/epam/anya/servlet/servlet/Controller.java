@@ -21,13 +21,13 @@ public class Controller extends HttpServlet {
 
         List<SentencePart> sentenceParts = new ArrayList<>();
         List<Sentence> sentences = new ArrayList<>();
-        for (Paragraph paragraph : text.parts) {
+        for (Paragraph paragraph : text.elements) {
             sentences.addAll(paragraph.parts);
             for (Sentence sentence : paragraph.parts) {
                 sentenceParts.addAll(sentence.parts);
             }
         }
-        request.setAttribute("paragraphs", text.parts);
+        request.setAttribute("paragraphs", text.elements);
         request.setAttribute("sentences", sentences);
         request.setAttribute("sentenceParts", sentenceParts);
 

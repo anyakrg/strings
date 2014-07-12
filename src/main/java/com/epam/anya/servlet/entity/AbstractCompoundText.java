@@ -1,12 +1,21 @@
 package com.epam.anya.servlet.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class AbstractCompoundText<T> implements CompoundText {
-    private List<T> elements;
+abstract class AbstractCompoundText<T extends TextPart> implements CompoundText {
+    public List<T> elements;
+
+    public AbstractCompoundText() {
+        elements = new ArrayList<T>();
+    }
 
     @Override
-    public Object getElement(int index) {
-        return null;
-       }
+    public String toString() {
+        String s = "";
+        for (T element : elements) {
+            s += element.toString();
+        }
+        return s;
+    }
 }
