@@ -1,9 +1,6 @@
 package com.epam.anya.servlet.parser;
 
-import com.epam.anya.servlet.entity.Paragraph;
-import com.epam.anya.servlet.entity.Sentence;
-import com.epam.anya.servlet.entity.Text;
-import com.epam.anya.servlet.entity.Word;
+import com.epam.anya.servlet.entity.*;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -68,10 +65,10 @@ public class Parser {
     private static boolean fillSentence(Matcher matcher, Sentence sentence) {
         if (matcher.group(GROUP_PARAGRAPH) != null) return false;
         if (matcher.group(GROUP_PUNCTUATION) != null) {
-            sentence.add(new Word(matcher.group(GROUP_WORD)));
+            sentence.add((SentencePart) new Word(matcher.group(GROUP_WORD)));
             return !matcher.group(GROUP_PUNCTUATION).contains(".");
         } else {
-            sentence.add(new Word(matcher.group(GROUP_WORD)));
+            sentence.add((SentencePart) new Word(matcher.group(GROUP_WORD)));
             return true;
         }
     }
