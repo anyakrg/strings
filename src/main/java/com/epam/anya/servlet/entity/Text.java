@@ -4,4 +4,7 @@ public class Text extends Symbol {
     public Paragraph[] elements;
 
 
+    public Text(String inputText) {
+        
+    }
 }
