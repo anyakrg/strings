@@ -13,20 +13,7 @@ import java.util.List;
 public class ParseAction implements Action {
     @Override
     public String execute(HttpServletRequest request) {
-        Text text = Parser.parseString(request.getParameter("text"));
 
-        List<SentencePart> sentenceParts = new ArrayList<>();
-        List<Sentence> sentences = new ArrayList<>();
-        for (Paragraph paragraph : text.elements) {
-            sentences.addAll(paragraph.elements);
-            for (Sentence sentence : paragraph.elements) {
-                sentenceParts.addAll(sentence.elements);
-            }
-        }
-        request.setAttribute("paragraphs", text.elements);
-        request.setAttribute("sentences", sentences);
-        request.setAttribute("sentenceParts", sentenceParts);
-        return "/WEB-INF/structure.jsp";
     }
 //        String sourse = request.getParameter("textarea");
 //
@@ -35,5 +22,5 @@ public class ParseAction implements Action {
 //
 //        //request.setAttribute("text", text);
 //        return "WEB-INF/index.jsp";
-    }
+
 }
